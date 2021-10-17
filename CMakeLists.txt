@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(myTelnet)
 
-add_executable(${PROJECT_NAME} "main.cpp" "server.cpp" "server.hpp")
+add_executable(${PROJECT_NAME} "main.cpp")
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Boost REQUIRED COMPONENTS chrono coroutine system thread)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
